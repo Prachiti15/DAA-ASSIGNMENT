@@ -1,13 +1,15 @@
 # DAA-ASSIGNMENT
 
-PROBLEM STATEMENT:
+**PROBLEM STATEMENT:**  
 In Activity Selection Problem modify the selection criteria and suggest the logic to select the activity(s) with maximum resource usage.
 
 
-**APPROACH:**  In a General Activity Selection Problem, the Greedy approach is best. The activities must be arranged according to finish time in increasing order. This enables us greedily assign time to maximum items. But here as we need to select activity(s) as maximum duration of resource usage the approach gets modified as, here along with **sorting the activities by their finish time we will also search and select the activity with maximum resource usage time (finishTime- startTime) such that they dont overlap**.
+**APPROACH:**  
+In a General Activity Selection Problem, the Greedy approach is best. The activities must be arranged according to finish time in increasing order. This enables us greedily assign time to maximum items. But here as we need to select activity(s) as maximum duration of resource usage the approach gets modified as, here along with **sorting the activities by their finish time we will also search and select the activity with maximum resource usage time (finishTime- startTime) such that they dont overlap**.
 
 
-**EXPLANATION:** Here we are first storing the activities with their start time and finish time in a list. Sorting the activities in increasing order of their finish time. We are calculating and storing the maximum resource utilization possible in first i activities and also the activities involved in that such that no two activities overlap.  Using dynamic programming we will calculate the maximum resource utilization for all possible sequences and select the activities involved in sequence which has max. of the resource uttilization in all the possible sequences.
+**EXPLANATION:**    
+Here we are first storing the activities with their start time and finish time in a list. Sorting the activities in increasing order of their finish time. We are calculating and storing the maximum resource utilization possible in first i activities and also the activities involved in that such that no two activities overlap.  Using dynamic programming we will calculate the maximum resource utilization for all possible sequences and select the activities involved in sequence which has max. of the resource uttilization in all the possible sequences.
 
 
 CODE:
@@ -138,5 +140,7 @@ class Main {
 ```
 
 OUTPUT:
+```
 The maximum resource utilization is 12
 The activitys involved in the maximum resource utilization are A4>>A6>>A8>>
+```

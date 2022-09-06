@@ -99,7 +99,7 @@ class Main {
       "The maximum resource utilization is " + maxdifference[n - 1]
     );
     System.out.print(
-      "The activitys involved in the maximum resource utilization are "
+      "The activity(s) involved in the maximum resource utilization are "
     );
     for (int i : tasks.get(n - 1)) {
       System.out.print("A"+(i + 1) + ">>");
@@ -133,7 +133,6 @@ class Main {
     );
 
     findMaxdifferenceactivitys(activitys);
-   
   }
  
 }
@@ -142,5 +141,5 @@ class Main {
 OUTPUT:
 ```
 The maximum resource utilization is 12
-The activitys involved in the maximum resource utilization are A4>>A6>>A8>>
+The activity(s) involved in the maximum resource utilization are A4>>A6>>A8>>
 ```
